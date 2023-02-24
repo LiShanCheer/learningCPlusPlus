@@ -7,9 +7,9 @@
 #include "MyConstruct_coord_iterator.h"
 #include "MyConstruct_point_2.h"
 // K_ is the new kernel, and K_Base is the old kernel
-template < typename K_, typename K_Base >
+template < typename K_, typename K_Base >    // 定义两个模板类
 class MyCartesian_base
-  : public K_Base::template Base<K_>::Type
+  : public K_Base::template Base<K_>::Type  
 {
   typedef typename K_Base::template Base<K_>::Type   OldK;
 public:
